@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<title>Home</title>
+<style>
+
+body{
+        background-color:white;color:black;
+}
+
+/*{
+  background-image: url("pic2.JPG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+*/
+
+nav{
+display: flex;padding:2% 6%;align-items:center-right;justify-content:space-between;font-size:40px;
+}
+
+
+.first ul li{display:inline-block; padding:8px 12px;position:relative;list-style:none;}
+.first ul li a{color: darkred;text-decoration: none;}
+.first{font-size:18px; text-align: center;
+}
+.third a{font-size:30px; text-align-last: center; color: darkred;}
+</style>
+
+
+</head>
+<body>
+
+<center>
+<section class="header">
+<nav>
+
+<div class="first">
+<ul>
+
+<li><a href="website2.html"> Home </a></li>
+<li><a href="aboutUs.html"> About Us </a></li>
+<li><a href="demo.html"> Demo</a></li>
+<li><a href="contactUs.html"> Contact Us </a></li>
+<li><a href="SignUp.html"> Sign Up </a></li>
+<li><a href="login.html"> Login </a></li>
+
+<br>
+<li id="currenttime"></li>
+</div>
+</ul><div>
+</nav>
+</div>
+</div></center>
+
+click here to see more:
+<a href="Categories.html"><img src="pic3.jpg" alt="" width="100%"></a>
+<div class="third"><a href="feedback.html"> Your feedback is important to us.</li></div>
+
+
+
+
+
+<!--js used-->
+
+
+
+<script>
+function change(){
+var today = new Date();
+var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var dateTime = time+' &nbsp;'+date;
+ 
+console.log(dateTime)
+document.getElementById("currenttime").innerHTML=dateTime;
+}
+
+setInterval(change,1000);
+
+
+</script>
+
+</body>
+<html>
